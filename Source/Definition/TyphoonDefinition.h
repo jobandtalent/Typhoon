@@ -43,6 +43,8 @@
  * Indicates that a shared instance should be created as long as necessary. When your application's classes stop referencing this component,
  * it will be deallocated until needed again.
  */
+NS_ASSUME_NONNULL_BEGIN
+    
 typedef NS_ENUM(NSInteger, TyphoonScope)
 {
     TyphoonScopeObjectGraph,
@@ -287,3 +289,5 @@ definition.factory = [self sqliteManager];
 
 
 @end
+
+NS_ASSUME_NONNULL_END
